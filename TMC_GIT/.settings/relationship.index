@@ -31,9 +31,5 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_z-dncGOVEe6Nnvaom2kt-w - atlas_superstore_clients",
-    "version" : "Latest",
-    "type" : "schema"
-  } ]
+  "relatedItems" : [ ]
 } ]
