@@ -25,4 +25,19 @@
     "version" : "Latest",
     "type" : "routine"
   } ]
+}, {
+  "baseItem" : {
+    "id" : "_rb_4IGOKEe6Nnvaom2kt-w",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_z-dncGOVEe6Nnvaom2kt-w",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_XgtY4GRPEe6hdfxx25NesQ - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 } ]
