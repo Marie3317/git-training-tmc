@@ -31,11 +31,7 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_yzCWIGOVEe6Nnvaom2kt-w - metadata",
-    "version" : "Latest",
-    "type" : "schema"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_rb_4IGOKEe6Nnvaom2kt-w",
