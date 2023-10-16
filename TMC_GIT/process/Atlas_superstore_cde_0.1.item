@@ -162,12 +162,12 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <metadata connector="FLOW" name="tFileInputDelimited_1">
-      <column comment="" key="true" length="-1" name="REFERENCE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="REFERENCE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CONDITIONNEMENT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PRIX_UNITAIRE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="true" length="-1" name="REFERENCE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="REFERENCE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CONDITIONNEMENT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PRIX_UNITAIRE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -189,7 +189,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="Cleaned">
-      <column comment="" key="true" length="-1" name="REFERENCE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="REFERENCE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CONDITIONNEMENT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PRIX_UNITAIRE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" defaultValue="" key="true" length="11" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -204,7 +204,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateCondensedTool="true" name="Cleaned" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="cde.REFERENCE " name="REFERENCE" type="id_Integer"/>
+        <mapperTableEntries expression="cde.REFERENCE " name="REFERENCE" type="id_String"/>
         <mapperTableEntries expression="cde.CONDITIONNEMENT " name="CONDITIONNEMENT" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="cde.PRIX_UNITAIRE " name="PRIX_UNITAIRE" nullable="true" type="id_Float"/>
         <mapperTableEntries expression="Cdes.numero_commande " name="numero_commande" type="id_Integer"/>
@@ -216,7 +216,7 @@
         <mapperTableEntries expression="Cdes.pays_magasin " name="pays_magasin" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="cde" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="REFERENCE" type="id_Integer"/>
+        <mapperTableEntries name="REFERENCE" type="id_String"/>
         <mapperTableEntries name="CONDITIONNEMENT" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="PRIX_UNITAIRE" nullable="true" type="id_Float"/>
       </inputTables>
@@ -272,7 +272,7 @@
     <elementParameter field="TEXT" name="LABEL" value="data_client_clean"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="true" length="-1" name="REFERENCE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="REFERENCE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CONDITIONNEMENT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PRIX_UNITAIRE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" defaultValue="" key="true" length="11" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -465,7 +465,7 @@
     <elementParameter field="TEXT" name="LABEL" value="sortie_stg"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="true" length="-1" name="REFERENCE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="REFERENCE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CONDITIONNEMENT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PRIX_UNITAIRE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" defaultValue="" key="true" length="11" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -477,7 +477,7 @@
       <column comment="" key="false" length="255" name="pays_magasin" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="true" length="-1" name="REFERENCE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="REFERENCE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CONDITIONNEMENT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PRIX_UNITAIRE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" defaultValue="" key="true" length="11" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -606,13 +606,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b7ae90f2-d702-4294-b98a-59e9f794aaa2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uDXq2ROdMDi/j3jFtNJHcMvzQ11q2FUPl/5zbC95pZ8fz/rhFUoXN6Pp7BKas+yCH88/0L/2QCXF&#13;
-Zk/CqHIRsg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d90b0127-55cc-4ad1-822c-ae5b8197273d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SJbRaEM7qUON95gmd9dH6e0NOqJcmTcftH9ny8Mw9upxMQCLsEFikICO1P62z8POMuPuVuC9b/P8&#13;
-4L778+Dn5Q==</DigestValue></Reference></SignedInfo><SignatureValue>BJ1Y/weKLkUVZrbDPpkAn2rnlR6PeOK62fzjV1UYqEYqjxwmd8Anof2hcQg3SVr7UxwkCgEUbeh9&#13;
-pbUqAgVSgb3+w5peOgqrOScUaX3vQElDxNjkChqAqAqFxPCznaZpdEr4vy8U1vs8EPgp6MEvjtIB&#13;
-bdxBQlo60Q9of0Fy5lYDOguEZk+woejy3Cl7fibBmEcQd5vTGrWhImjK+g3LvCp3KLM/K9XdYgy9&#13;
-vrVcZOQ1AVCB7Mv9EDkVn8kGkIVBYXQpjhIvSbNuCcNC5lFUb63dsmAnegelW8MDcDOjnIYKSisV&#13;
-KZ8spk2qrSTuERTGM2+CZM3hCSBfV56IxeX1Lg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_753f22b6-6142-4750-9e39-2d4bf9f39cd7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jJftqeqdQzNQMUsbmYWAmo2zqjd6aTB7luVpobMTWRnri1CQLdaYtr01UtUJAA9EC2nubVnpApNl&#13;
+CHggH/HM4Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_925d63cd-7da7-41ec-a5bb-4390063a2456"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dYj2iFInqnXv7Fw8Ig40EpU+3AwVU8Bl8otgwhHUa88bXEZAEjZ5jt6r657h1yGamcHawg7h+joE&#13;
+5xxg/sUwFg==</DigestValue></Reference></SignedInfo><SignatureValue>CTh+ErvbghQ+bsAXBCdSYfrZNajbcH0ywChisP//aGAAMZb+Qt08FspuRSpHTi5tB6wVFtb1Au0t&#13;
+PMCldQG9gwKtFs/MfpFWijazHfLpjx65coiG4ed0vsjBcRQMTOFgYz9QhIm6+ZxugrPVuFu/g5L+&#13;
+AK/rrkesHZoYZC/zIH7lB4ngkTLX+ui4YEh/XpDdiYzSKbgYNdUem2rzTmOuT4KN7T7svUHBJvuT&#13;
+Z/An92B3v9uZdUApBRfMggpgRQrWKDwOBtrLm1gTrFW2E5YR4ML32xViCa3CeqzERnm/EotwYzy+&#13;
+8+1v8vy6U0LzDxpj+wELo+e1ieUGHmART2OkXA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -634,4 +634,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d90b0127-55cc-4ad1-822c-ae5b8197273d" Target="#_b7ae90f2-d702-4294-b98a-59e9f794aaa2"><Timestamp>2023-10-16 18:02:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_925d63cd-7da7-41ec-a5bb-4390063a2456" Target="#_753f22b6-6142-4750-9e39-2d4bf9f39cd7"><Timestamp>2023-10-16 18:03:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
