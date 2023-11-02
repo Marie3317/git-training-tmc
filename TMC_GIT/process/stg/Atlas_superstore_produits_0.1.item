@@ -294,21 +294,23 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="Cleaned">
-      <column comment="" key="true" length="-1" name="reference_produit" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="pdts" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="libelle" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Float" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="pdts.reference.substring(0, pdts.reference.length()-5) " name="pdts" type="id_String"/>
+      </varTables>
       <outputTables activateCondensedTool="true" name="Cleaned" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="pdt.reference_produit " name="reference_produit" type="id_String"/>
+        <mapperTableEntries expression="Var.pdts " name="pdts" type="id_String"/>
         <mapperTableEntries expression="pdt.libelle " name="libelle" nullable="true" type="id_String"/>
         <mapperTableEntries expression="pdts.conditionnement " name="conditionnement" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="pdts.prix_unitaire " name="prix_unitaire" nullable="true" type="id_Float"/>
       </outputTables>
-      <inputTables activateExpressionFilter="true" expressionFilter="pdts.reference.substring(0, pdts.reference.length()-5) " lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="pdts" sizeState="INTERMEDIATE">
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="pdts" sizeState="INTERMEDIATE">
         <mapperTableEntries name="reference" type="id_String"/>
         <mapperTableEntries name="conditionnement" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="prix_unitaire" nullable="true" type="id_Float"/>
@@ -333,7 +335,7 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="reference_produit"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pdts"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="libelle"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -347,7 +349,7 @@
     <elementParameter field="TEXT" name="LABEL" value="data_client_clean"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="true" length="-1" name="reference_produit" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="pdts" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="libelle" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Float" usefulColumn="true"/>
@@ -355,7 +357,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_lp_AkHlfEe6b6ZNHYWCiFg"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MARIADB"/>
@@ -427,7 +428,7 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="reference_produit"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pdts"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -456,13 +457,13 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="true" length="-1" name="reference_produit" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="pdts" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="libelle" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Float" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="true" length="-1" name="reference_produit" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="pdts" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="libelle" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Float" usefulColumn="true"/>
@@ -503,6 +504,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="reference_produit"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="pdts"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Cleaned"/>
@@ -528,7 +532,6 @@
   </connection>
   <connection connectorName="FLOW" label="pdt" lineStyle="8" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="pdt"/>
   </connection>
   <note opaque="true" posX="960" posY="192" sizeHeight="161" sizeWidth="257" text="INFO : Mettre les données des colonnes &quot;nom&quot;, &quot;prenom&quot; et &quot;pays&quot; en UPPERCASE&#13;&#10;Enlever les espaces avant et après des même colonnes (fait dans options avancées du tdbinput)">
@@ -571,13 +574,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4964022c-1cd0-4eb1-b8c7-88edddfae586"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lLBx34qBAPyLvWilI8CQsjnVrovHzsohD6jRD32LlBo+oDvQk/r9ZAA0FmGl/AAXluLGX+rI1ewS&#13;
-Smk/JNfGXQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_918f48a3-1167-4bae-b803-9b1f8c6c6c6c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>skEhg24F/BENoGLpktG5PCLsCZfWsczctjrNPWPRf4VvmAA0TQWLmTXdGQ3InDAbChD+FuCj8OZX&#13;
-9AnGn11pNQ==</DigestValue></Reference></SignedInfo><SignatureValue>acXQ6yFbs0jdFDQgFs3Qooxr2sv8shuJqBR3/bZ9dfQqJa5pfgIvme3LM1JZS3wVujxO79BpBqNY&#13;
-nKGdZxW9qwHZCqg7lRzXi8suBh84KBrD4ZeX5ieX7c1X6hiMo84HVRcaTCY8vM3/Ha/VEvhqTg4J&#13;
-jyBBvznIPztqbD44L6JJue70tOmdqJGAZ+4Hi4uj+Ov89hQWTFkleSy1Z4K9MWVFvigMG9D4WpVi&#13;
-j5ScTOYyzPKEKb8az7nWouOOF4s4EFqBsovhPGr1kbddZkj/MHWF4XfxSc+X2fCQx09gyrzmL/Uc&#13;
-bUX9TBOziOcPva2QXQvXDoJen3YihGSiujgs4g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6c8cea9e-4aee-4c2d-b1f2-adb00895a9f8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>f7FdMJw9+XtNP23Q3U0aXqIhKnANoZgPzGD0Ck07Jck7ZKH3rVLTZ3N0Px8puwSo/zwbRaDX1hqc&#13;
+s/+99pGrCw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9a749cd3-4b80-4fc4-88b0-d46e3e4da842"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>J629NVz8DiBiQUvWyDroLkuzR6sHfzbzcYCs7i8VhPEYyuoSVxBIqWRRvalq7uDUmG0bdlrgeIzf&#13;
+Fegl3rlqwQ==</DigestValue></Reference></SignedInfo><SignatureValue>DQzt4uRm650bbm+wwv/5tEbh1VzvCZRvo62Ek0sRQj4DrsG03uyYRv/VSsDYtuJG4asyP81OnYcu&#13;
++5daF3lf8sC20MXgLL35tnjsiuXC6e7Zqo7l+/2R2B9hYORH1fkunqKAB7z8P9/oxeKIVOGOjjDP&#13;
+ukVZpxlfM2rmJWtjr0nsSvvVU94IX69CQtJ5nR6jUjf78k9HC4eTvqINXXV2WWAuQw8FLssGZbYt&#13;
+PgJNhluJtjSZHLDvmJtg/o43ZYGF+U4qmGk5F25+sC8KwBDO8fimESsnbhg5wIZx3LIxNiozj8vr&#13;
+x+Uz+j/XCszgcoO+0Y0yZ+1njZufSzY5XVLE+g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -599,4 +602,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_918f48a3-1167-4bae-b803-9b1f8c6c6c6c" Target="#_4964022c-1cd0-4eb1-b8c7-88edddfae586"><Timestamp>2023-11-02 09:46:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9a749cd3-4b80-4fc4-88b0-d46e3e4da842" Target="#_6c8cea9e-4aee-4c2d-b1f2-adb00895a9f8"><Timestamp>2023-11-02 09:47:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
