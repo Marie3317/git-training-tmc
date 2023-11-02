@@ -66,5 +66,21 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ ]
+  "relatedItems" : [ {
+    "id" : "_MSJZIHlgEe6b6ZNHYWCiFg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_WhxVMHloEe6D6-fIgqVZCQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_lp_AkHlfEe6b6ZNHYWCiFg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_WhxVMHloEe6D6-fIgqVZCQ - csv_clients",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 } ]
