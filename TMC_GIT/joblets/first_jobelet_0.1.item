@@ -217,33 +217,6 @@
         </inputTables>
       </nodeData>
     </node>
-    <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="224">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-      <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-      <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-      <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-      <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-      <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-      <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-      <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-      <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-      <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-      <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
-      <elementParameter field="TABLE" name="LENGTHS" show="false">
-        <elementValue elementRef="SCHEMA_COLUMN" value="id_client"/>
-        <elementValue elementRef="LENGTH" value="10"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="id_produit"/>
-        <elementValue elementRef="LENGTH" value="10"/>
-      </elementParameter>
-      <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-      <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-      <metadata connector="FLOW" label="sortie" name="tLogRow_1">
-        <column comment="" key="true" length="-1" name="id_client" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="true" length="-1" name="id_produit" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      </metadata>
-    </node>
     <connection connectorName="FLOW" label="clients" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="clients"/>
@@ -257,10 +230,6 @@
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="produits"/>
     </connection>
-    <connection connectorName="FLOW" label="sortie" lineStyle="0" metaname="sortie" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
-      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="sortie"/>
-    </connection>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
@@ -268,13 +237,13 @@
     </subjob>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2c447432-2033-4197-917a-ddea766b12ad"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BRvtYaawl/cIHE/GqsO5Khn5nom1b70H8bMXtFzSGK7mBmXNcDEYVCbnjAuXBVu5/x/z6UkJCcGN&#13;
-pFw1BrHonA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e8b97908-9686-439d-969a-4e7354dd80f8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DRanW216uh6yUyf+OiR4Jr7l5qtxDiQYfLHVLN/icMIVl9wwh8nraHjxLIlgX1i9eLnqaYJzwI2T&#13;
-+sX9G0gBCQ==</DigestValue></Reference></SignedInfo><SignatureValue>l0x7dl/C0QnuqKeQ2WJOf0C+pFt4XZlF85AZhwO6/6GgG25EwpOELaJ73gw3Nh01u4/CYBFTmv6v&#13;
-xwD7NmhtSK4mshKcRXNa29cU13rUer+e6RB2j5ojhWahox1CdC2kl1mL5CMx6mWFADU0EFqxfLgc&#13;
-2j8FxYE5VXO22QBJ05YE6IqKMRubgkcLrFw4PYbLZq+EX9pZvRPmSrQpB1fQWXeQEmNqlSxPE8Uo&#13;
-jqW6vXyGeP+Fcr575eXJ5hSBQ7r4ifusyp4iwBz28Ia1xCb+ALuXTf2dPx3Akl6XnBrEUr1x7b6l&#13;
-aRFA43Nno6mme0KSE6VMntwl+cx5Bp+Q7fo6Ug==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1fd8a669-d076-4fdb-aa59-5241dd27dc03"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+HAJ2jEetHxtcGdnYn735Lgis78IbtSv55+lo/Car+dDygFWyQfr9pSEfLnma6KceVFnLqfGxMA5&#13;
+mz/PJSf5iQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_06c9e8e5-a92b-43a7-abee-2786b6c92277"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ryhrP1gVL9GN+vfOBDEMj7AFv1DEgogQEebGv+ajn+IEDjxLlvfQk0xBr4jM8QVq1zk6BsKsbjl8&#13;
+SnIZjRmxhQ==</DigestValue></Reference></SignedInfo><SignatureValue>YrhKGGnD8mxXYWFHVRMXbCjo2Tp6L0PtgWWv58sNVoceub8/eavH2T74KHcfD7SaYQXnGpMt/N23&#13;
+hkOwvV5FTrf2FmzYHjdXNlta24mNGwh9t/TbQXbr4XjrIlxiaPnYpL7OdaBz3+EH9eGcvMhSwMRq&#13;
+O70kYhHVwufuqsTMXiVIeJVAoH7uYdhVnIx9Ki1RUB5mblIn0BJmMT1MwU//zU8n4Pqk93IvAXXp&#13;
+ZC12Z85rnP5cOP8Fd+/33Ha0uEobjgDMRplfzYzD8AqOjQeTfv428K3o/YNUFrsJSSV7bkBldvUm&#13;
+viMsKeanH/oU8LYV58Bl4fqkQjxYbdI8dMKl+w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -296,4 +265,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e8b97908-9686-439d-969a-4e7354dd80f8" Target="#_2c447432-2033-4197-917a-ddea766b12ad"><Timestamp>2023-11-02 18:55:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_06c9e8e5-a92b-43a7-abee-2786b6c92277" Target="#_1fd8a669-d076-4fdb-aa59-5241dd27dc03"><Timestamp>2023-11-02 19:07:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
