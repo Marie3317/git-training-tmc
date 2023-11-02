@@ -35,6 +35,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_EomQIGRfEe6hdfxx25NesQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_7eL9oHloEe6D6-fIgqVZCQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_7eL9oHloEe6D6-fIgqVZCQ - csv_pdt",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_onL-YGRfEe6hdfxx25NesQ",
     "version" : "0.1",
     "type" : "job"
