@@ -215,6 +215,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7eL9oHloEe6D6-fIgqVZCQ"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7eL9oHloEe6D6-fIgqVZCQ - csv_pdt"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" show="false" value=""/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
@@ -268,12 +270,12 @@
     <elementParameter field="TEXT" name="LABEL" value="csv_pdt"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="csv_pdt" name="tFileInputDelimited_1">
-      <column comment="" key="true" length="9" name="reference" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="9" name="reference" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="6" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="csv_pdt" name="REJECT">
-      <column comment="" key="true" length="9" name="reference" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="9" name="reference" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="6" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -312,7 +314,7 @@
         <mapperTableEntries expression="pdts.prix_unitaire " name="prix_unitaire" nullable="true" type="id_Float"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="pdts" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="reference" nullable="true" type="id_String"/>
+        <mapperTableEntries name="reference" type="id_String"/>
         <mapperTableEntries name="conditionnement" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="prix_unitaire" nullable="true" type="id_Float"/>
       </inputTables>
@@ -563,13 +565,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f0e49ea7-94a6-4bd6-9565-8ca9babcb795"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cx4RmR92nlJDvry83QOCWaJwoXlJ8EyoTmv4oc8R0+GYIhl3lq+u8g6QlqsOOpXxe9/dB0U6Fvv7&#13;
-0kMNDel/Lg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_452af420-4a31-44d7-891d-f6c78408c366"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EK36dGTdnN684pXtEBz3rg+ixN0tOdc2YtFZHJKg5mQb5+mMlFnjkSm/zZxUleJB3TKvuJTcuTeA&#13;
-mn24pvZ7xw==</DigestValue></Reference></SignedInfo><SignatureValue>UgFX+W+lW6mbVHcl/5N2kXpZM+xh3U2q0EBAf3ijdkGWCXI22so4prdtr54OpmVpxD3DtdCFGmf1&#13;
-nZYZrN/8whlEzQNVXuWxi7nTj+O9zJCqiDT0yKKQzobzF2mLuRP0eV32ZB1nR6/7KUOHjalmvRqu&#13;
-gohyc8waiIRP/Q5Z1tGIvNm9Bi1dOOZt9PKabkAU8ZNRRucTxKz7muALBKQQRVlRJb5t5MBvDAsW&#13;
-Hg19pYNGKLPfSWafZCpxl7YkAoGXU9vq8/dx2L3YAPWTg+8lfoNWVpERinbcka0ypvHOFDkPVT1d&#13;
-WSQSUF1oXKQiNO0Bf3bc7pNekWEKH5M4xPpa1w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_10a822b8-5cc7-4619-82c4-da0e3bbe3611"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Zc3kWXdKF6dAC2xtMNwxS+ivUnObL4FQpvuOc31jPysZJ9MzdynJWLUoCDRxyY4DLE0shjURmIlC&#13;
+hOVnRhDeDg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_241217df-bcc8-4398-9363-d75633466760"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/AmAkFXJ+QF40HhzLIlBLKUjqvZC+F88023w+6VwtKL8iDzqMsUT1knq11wM50pfybKxfs9+rlyT&#13;
+r9jMNu8ZXQ==</DigestValue></Reference></SignedInfo><SignatureValue>ZDAGJKojmJNxaQ1Ew/Jqb++j5cJoJXxHozPTFXD3cwgkgYxHSxxJlLY1szn/oJBa7FUBpL3rTVaO&#13;
+j419nFf4+b23angEwSUE2CGm1bM3eY4yvMBYh9y3p/s3JsH592ijWSTy6tPa3edN68rwqlzzJR4N&#13;
+ZJygaaA8nEo3ZrTkqh0FSw7nEUwHNMNO1FK0sC8vLR9OohEhLHe1PZi9pFbdE1HyxbuqrjGpE9hO&#13;
+ueL0XmlA0HwPUwiOnFBYSH7sj90YFMcdyGgzO5RbNEZUEgA2JZUqQUYfaEXG7/96b9Z2qjaL+20W&#13;
+osckRHnRpX4Ou2A/XW6CJzrJM3xiUfMf3ClnQg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -591,4 +593,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_452af420-4a31-44d7-891d-f6c78408c366" Target="#_f0e49ea7-94a6-4bd6-9565-8ca9babcb795"><Timestamp>2023-11-02 12:45:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_241217df-bcc8-4398-9363-d75633466760" Target="#_10a822b8-5cc7-4619-82c4-da0e3bbe3611"><Timestamp>2023-11-02 12:46:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
