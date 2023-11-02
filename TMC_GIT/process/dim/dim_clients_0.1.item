@@ -247,20 +247,9 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
-    <elementParameter field="TABLE" name="ADD_COLS">
-      <elementValue elementRef="NAME" value="id_client"/>
-      <elementValue elementRef="DATATYPE" value="INT"/>
-      <elementValue elementRef="SQL" value="&quot;AUTO_INCREMENT&quot;"/>
-      <elementValue elementRef="POS" value="BEFORE"/>
-      <elementValue elementRef="REFCOL" value="code_client"/>
-    </elementParameter>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="id_client"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="code_client"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -289,14 +278,12 @@
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="true" length="11" name="id_client" nullable="true" originalLength="11" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="code_client" nullable="true" originalLength="11" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="nom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="prenom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="pays" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="true" length="11" name="id_client" nullable="true" originalLength="11" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="code_client" nullable="true" originalLength="11" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="nom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="prenom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -384,13 +371,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ad68f918-aa02-4bb4-92d7-e0f6da194dcd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fMJuLZTpg38ZrwdQVQXYAIvSkQNiTvCfKxwlSeT4FeauwO+38rXBjrE9IrOZrxd+8QrJ5Qe3t2Vq&#13;
-AEce63u9WA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ff61fba0-561f-4184-bd15-6f176b57af1c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qOXVdL1GaOA00HWD347fuWdwEmk/hnGyzdl4cP1KVXhCtTlWOMAYpfe1cfW50/HROVTSmmZ//wV0&#13;
-XerdJQtXYQ==</DigestValue></Reference></SignedInfo><SignatureValue>Jwxq1Q06g8DXEfGoBPz0byXuBYaTw3WyOhKJGris1N3wEYzOo9SwaPycd4I1tqdBcK5Pd9/bcdbN&#13;
-GjYRR5ajiru4os6LtTHDH3UvVfzhdD4PS9npqjDG7x8jNQZ3XXFPePIQWZwEceBB6VAlNJpvYpW9&#13;
-rfXHNO4baYZ4MoYEarhoBqd+FHu8hBZQ0cGVATa66cG8DE1Db3lIOdmo8e/qmwSg1KUPgYVv77DZ&#13;
-gurE5cJwFoGWidTYHddvxPmdEm0V6AilXIugquNhLC/rdSnjRH1y1rNE3z6VauAA35dIxWHhKJqf&#13;
-ab22gAOHcBp3VQI3hp81oYpCiLu5AhcTcYPW7A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_384b2869-f070-416d-b3a4-b5f03cf7dfcc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4uApqbHx99Z7SS2kmnRzhe/2bMaPofO5CeckOqFBqZipBMAiFxKdTL4AcjsJhKwbDPbrFaSuoMFh&#13;
+c4YQOWe+sg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e0efdab2-a465-4a6a-8785-6b03715d1e83"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5OFTXBxxjxivFq8uyGXAEreE66IeYVl4NMPjBOknE+O/9eJDJcGEPZRP1y4uja1tNNAK+nQOIn/Y&#13;
+L8+vpW9CcQ==</DigestValue></Reference></SignedInfo><SignatureValue>PdHoNT1pE1op+5B1+oxiHMTtfPE8iZh1Xet8vdzwzcMdAQ7YwEqQbD50Fe0ceiQyZAoOFD7lgWFD&#13;
+BMAU+gcc226ne2fxuzdbo/2Yp98xW5yKTeZwmg24n8GeB68U//D21ILHFp9uxVoIREHJPOMQbUb5&#13;
+GVnAgKqK9ZARmlhQ/ExC/ZNnV7eC+IEw2lFNS9PzkrEWxdscTjGjEjci+53bFozmoc+b0acXo4NL&#13;
+VP3p6/yJkdUpvYKiJKNZFJgNbB9iorZla8KFbEmdmQbR1Byo0rOQzY/J+BnZCD4/fL8/DJKf3HG3&#13;
+NvrK9nU6kHdKuYB+0SApTeFZ0Fe98qOWXB8Mmw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -412,4 +399,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ff61fba0-561f-4184-bd15-6f176b57af1c" Target="#_ad68f918-aa02-4bb4-92d7-e0f6da194dcd"><Timestamp>2023-11-02 14:23:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e0efdab2-a465-4a6a-8785-6b03715d1e83" Target="#_384b2869-f070-416d-b3a4-b5f03cf7dfcc"><Timestamp>2023-11-02 14:24:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
