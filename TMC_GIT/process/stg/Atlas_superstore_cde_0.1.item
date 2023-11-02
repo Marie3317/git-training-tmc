@@ -453,7 +453,7 @@
     <elementParameter field="TEXT" name="LABEL" value="data_client_clean"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="true" length="-1" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="numero_commande" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="code_client" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -610,7 +610,7 @@
     <elementParameter field="TEXT" name="LABEL" value="sortie_stg"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="true" length="-1" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="255" name="numero_commande" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="code_client" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -622,7 +622,7 @@
       <column comment="" key="false" length="255" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="true" length="-1" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="255" name="numero_commande" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="code_client" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -735,13 +735,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1dda3dac-33e4-4979-bc07-42ee9ea3b8e0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EYBfGJ+3o1heqNW0oy5kQ5Jp+gSx1sO7MFCJuUKsKDdvjN2p+afajhHVp8qJVkEUfKL4kC69/019&#13;
-fPLG/BqapA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_be1c3b63-59b3-47f2-874f-2afa9b35523c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bSsEx+AAO2B4/23LEYqrIWf/5HG8H84auLb7T0r140IeU9nFIFQTbyrmNHmIGCC5zT6+u6ksdKNr&#13;
-ho5mi27Zcw==</DigestValue></Reference></SignedInfo><SignatureValue>Pe9HvCAdutcK40mCDUeOOTAmmyNktkObPEBAniftDBoy2MC6S7SE1O+nC+sVGPQ4NeYnlJOm7uFE&#13;
-X1HkNGxrExf16p9CrFxq3Xv/BEEnudxaki5ANVeSSMewxcCJaDdU0tPzx6h8U4JLNrj7X5O0r5K1&#13;
-HrkQnesT6TkecDUnvWDu2Hwn+FKf81IkUSYh8hEu3IRcFZ7l1F2Re9eEm4WDo7xWqyS+VXIf8Q0J&#13;
-GsCgupFkE4nJO+YKsQL0CnlEAOI0m7jnK9DAtNKnDXvrfv/90Eu/PsNkwWy5cnHq5sgoel5VBBXK&#13;
-ZoaReIBKZwYaXlB4eZOomED5i75I+jX28u4Wjw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a5004257-ad54-4fe1-a49e-997aedc5adaa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3JsKg1lMIhXdHysp3kOTre+9cLHAYwHoB8CclynXe/wVuTvdNr4MN2BrirqDiwQ4LWzWOoWYgOEf&#13;
+pFqn5veAqw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3714e554-fa7f-4944-9e77-311bfbbd5926"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+doiTy3Fwr6Of9h/gN21/wjC7C42/6tw7IDkJQO1SkPJeOzs3AU9YvtihTnu9jt5VQBdleKr9dxs&#13;
+f3ilDvzAmQ==</DigestValue></Reference></SignedInfo><SignatureValue>i7jgq6MVsd09mi5pca865drBDhUgi2pAfwNoHATGp3VNhu1t48nnJ5irezLwJtDlM0mQ1P1zxFub&#13;
+6/QE5nj4Ha8l8q0UbWn0n1X80K0I9n/w8xNrMOMpA5NnouZGqTK+qCobcrHiCvWvigoB+6FZOyLO&#13;
+ehEkfYqaBYnDwhYCuI21QleQMVCwSpIFBhRfmu4BBe+57hDsiD6XPtTxPggl60kjvIgW3Dd8bgni&#13;
+G22lJuo3TVEykLYNScoVAFL64B50mUkzF92GT6uHXyFXjAvo/n/mf6aR5LwODzgNel6IhKlFjANo&#13;
+JOB5dbKaNqPwolSn9c6FJmmMAsJ7qQQjTXFl7A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -763,4 +763,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_be1c3b63-59b3-47f2-874f-2afa9b35523c" Target="#_1dda3dac-33e4-4979-bc07-42ee9ea3b8e0"><Timestamp>2023-11-02 14:02:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3714e554-fa7f-4944-9e77-311bfbbd5926" Target="#_a5004257-ad54-4fe1-a49e-997aedc5adaa"><Timestamp>2023-11-02 14:03:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
