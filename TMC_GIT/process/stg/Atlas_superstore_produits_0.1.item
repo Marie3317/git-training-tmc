@@ -340,16 +340,16 @@
     <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:EVjR/PUjrcd7LF1I4HI9YEVcUUSvp9dyRC19tQYDVu05OYqL/FEKKOUR4ka41A=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_atlas_superstore_produits&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE_OR_INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
-    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
-    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
-    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" show="false" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" show="false" value="100"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
@@ -382,21 +382,21 @@
     <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" show="false" value="false"/>
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
       <column comment="" key="true" length="4" name="reference_produit" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="libelle" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="true" length="4" name="reference_produit" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="libelle" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -572,13 +572,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ba3f925e-f19e-4fb9-adae-dd041f83838f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uUG4WfL9FVLtVTBRjLQ9I1XynU0cCu+LJfvDtHQWx5aj0X4DoOZW0Xq7mSWxZ1xuQU4KsJh0b1sd&#13;
-U/cELTWPIA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a99d425e-3fe9-4f5e-94a0-77033d7d436f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DnETLJFmXocPIQviMGNEpRGGpurodewu2Vv9V5DYMSLBkZ2Gn5nKHNE/KXOv6KUrEtWLs+f7wlfq&#13;
-3WMzRX0WSQ==</DigestValue></Reference></SignedInfo><SignatureValue>ao94c8wHUssLTHF+Rg+KrSmiFGYRCHxJgJyA8K8DLVd4b3Eg3ecIUkrg5NY76Exl1bdbselRlnqX&#13;
-Rdj5edWunztu/HPTskXsuycPG5u0t3d5ThuT6+uwl/SimtgtlCb+jsuGWL2LpQiVaqVhzWvQ4wOY&#13;
-DdAkfsA3l2UgEDkSLf7+/XAfNs/bjtuibJTg0vTZRIATWlM0k+/v44GA9NzoUAKM0O/bir1Wp8qz&#13;
-EfpfH+C9Fv7xXbx2VYNHKkHr0j14a0Ydjpc5mpjuOESfo2jv4OERSm0jC2R7NW+Xil6kIBnE3vha&#13;
-03IA8I0iMTh8qY01QnnPTQbGinHAbNKAzw5AjQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ca38605d-4e98-46fd-ae83-5cafb41aa4bd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wgEK3JruD51RjJdv5DgSuYSnrIFuBm1S4x+EnLVNp1vK9K4ZIxhIJOxmuPrWF39e08/xdgXFJZDv&#13;
+663n6wqcNA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a8d33933-6a19-4c04-addc-dcd54fda4b02"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eEIIaGRGzi3Bzv7MfIjonyP7cEusuO+yszX7NSwHktCxosnjOSGEkcCGciv8xMcw6hsmzC4J3Pn6&#13;
+cMbLHF0tEQ==</DigestValue></Reference></SignedInfo><SignatureValue>WpKjVS5K9aBaDRK+mpE3+xFC3df9SNxRfSWmpz2e5Hzy0P2L5rBweaLlz9bn1XuHBoqv9+urauyP&#13;
+mtHUkwYbc4nsQfvIriOqitnEH9Oj1Rw0VGwu0mRWNcWUnOm9idiBOaGv/kVa5Cz7I8k11SdhQwp8&#13;
+rZuh6wDL8dH2LL6f6hLStzaQeufjUOpIA27Cn9Enb2A0CUHMoJzJ3niov7lmSMN+j7pT1e11GHX9&#13;
+b2HSVuhzUVEKC8vWnXfueJcdrZj0jDC2wbskh2+ZoKA+RWW1kstINcEuKQJXq195RkJ1brb7e8yF&#13;
+MC7SW0PICgTzH4vdVHo5kLavZIJMIQPWkAQKfg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -600,4 +600,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a99d425e-3fe9-4f5e-94a0-77033d7d436f" Target="#_ba3f925e-f19e-4fb9-adae-dd041f83838f"><Timestamp>2023-11-02 09:25:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a8d33933-6a19-4c04-addc-dcd54fda4b02" Target="#_ca38605d-4e98-46fd-ae83-5cafb41aa4bd"><Timestamp>2023-11-02 09:26:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
