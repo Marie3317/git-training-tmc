@@ -16,6 +16,10 @@
     "id" : "_typr0HmWEe6-XOtDl1gqOg",
     "version" : "Latest",
     "type" : "joblet"
+  }, {
+    "id" : "_lp_AkHlfEe6b6ZNHYWCiFg",
+    "version" : "Latest",
+    "type" : "property"
   } ]
 }, {
   "baseItem" : {
