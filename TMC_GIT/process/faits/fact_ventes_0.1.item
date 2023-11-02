@@ -498,16 +498,6 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="somme_ventes"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nombre_commandes"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
@@ -521,16 +511,12 @@
       <column comment="" key="true" length="-1" name="id_produit" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_date" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_magasin" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="sort" name="REJECT">
       <column comment="" key="true" length="-1" name="id_client" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_produit" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_date" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_magasin" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -596,13 +582,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d87f5356-8ad7-48ea-905a-b8de1f1fee6e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>88lHFx77RHJNPHwJH8rf7r7+By+OTGFpfYN3zevT+XS52P6laJ1m5igsdJLHxj/CMjPUx08hTZ7k&#13;
-/GmumoflMA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_84bfe4e8-f404-4ecf-a05f-93f631c720b6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pXbVK58684Q0Zx6ffWHNoQWvCLStlZxzRErJEPy6NUiOuZnJpW9eCKzJAc8syMci6Pcu7GqlK5PD&#13;
-XuiCKikXPA==</DigestValue></Reference></SignedInfo><SignatureValue>ZnZjstzS8Z00HLFGpPVoFWa3VvoH+eNHIkpvjVq5GJf3p28FuBUgCCqDojR4ATOXlYIpQQAb0Ld8&#13;
-5oW12DYSNBwRHaFrl55H/Knm3q6nIMzcgh8SpoTBqLBZMAo0sI1gnCSYxyON/qH1teLYdOgSlu32&#13;
-I3mg+FamLAFOit8m6CCzOmuuc21TFlpFbNRWfbqPgj4/Dm1mjalRLvj3WiLLqxytpS27gwl+j5D4&#13;
-rzyg1otKcYzQkp6pTeclSv2Q84ibTQzJy2CNb9Vj549XTzKcH26jUKxAp7Zdk/Hzqtn9A3Lf47mI&#13;
-NgaIvhWAUUdnTODqgc9owXJ6OepfUEJ13Jg18Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_572cb95f-15e8-455b-b7fc-8fd9347c37c1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ig9yhvVVrbkZGbgsf51NFl1BlFIUTsPXY4TzHVgOiR1NOo/0+GPUillQ17LSasnqDVzxMRhBJwod&#13;
+QffgaU7Ziw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c2265ed9-d389-4390-88bb-d0eb04248d9a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FGx5n7mSJJd4KfYCqG7hL+HcwpOoxw95T/gpJVKRcb+MyWC3NYWMdXiTtj7glITXNOB2CKNOiqZr&#13;
+kO+qWCMfZw==</DigestValue></Reference></SignedInfo><SignatureValue>W3TsjZ9KoROUH6Bm1deeVZyPfApOSedKKM3ppmOrXvLibWFjpj4QtyBdDimM8AJZr56jwSv+ESbB&#13;
+nFQ7SFzt8t/+ai8Yq+r0p4DraHN9tB5UepF+nVVcE2Lbyx2JNb+4wtBRXU6unAipqP6eGWiRKUu4&#13;
+hZGEGHPhSCAjj/x+dU0TQXPc5wgEwTHsD4SonHpinq3V7dcfoCUEqKCiIzXlHQYbFTqkZx36Bq+A&#13;
+NupzBuSMzacK/YnrY+vZKEMMWA+frfPQ2YHIDirOn2cM7znmTY5MZ35ffOweHtkbNggnViVAXsPX&#13;
+/xSIl15nDUrrnR3TrVCrIzExjI3eixpeQ+28QA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -624,4 +610,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_84bfe4e8-f404-4ecf-a05f-93f631c720b6" Target="#_d87f5356-8ad7-48ea-905a-b8de1f1fee6e"><Timestamp>2023-11-02 19:20:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c2265ed9-d389-4390-88bb-d0eb04248d9a" Target="#_572cb95f-15e8-455b-b7fc-8fd9347c37c1"><Timestamp>2023-11-02 19:20:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
