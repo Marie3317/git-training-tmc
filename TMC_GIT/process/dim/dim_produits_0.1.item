@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_VJabUHmNEe6-XOtDl1gqOg" name="db_atlas_superstore_AdditionalParams" prompt="db_atlas_superstore_AdditionalParams?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter comment="" internalId="_VJabUXmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Login" prompt="db_atlas_superstore_Login?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_VJabUnmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Server" prompt="db_atlas_superstore_Server?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_VJabU3mNEe6-XOtDl1gqOg" name="db_atlas_superstore_Password" prompt="db_atlas_superstore_Password?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_Password" value="enc:system.encryption.key.v1:AGAAOLlIEQUPUja80sBbbpZyYA8UAAlo0xX/gcPk/E4VNZ4+oyh6UHZ3Va8="/>
+    <contextParameter comment="" internalId="_VJabVHmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Port" prompt="db_atlas_superstore_Port?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_VJabVXmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Database" prompt="db_atlas_superstore_Database?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="atlas_superstore"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" internalId="_VJabVnmNEe6-XOtDl1gqOg" name="db_atlas_superstore_AdditionalParams" prompt="db_atlas_superstore_AdditionalParams?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter comment="" internalId="_VJabV3mNEe6-XOtDl1gqOg" name="db_atlas_superstore_Login" prompt="db_atlas_superstore_Login?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_VJabWHmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Server" prompt="db_atlas_superstore_Server?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_VJabWXmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Password" prompt="db_atlas_superstore_Password?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_Password" value="enc:system.encryption.key.v1:J5gL12XNXU5679qrzZZ7m6IodfkEDQinQWs4lu6/2UlKCty/YYSqfXANXiw="/>
+    <contextParameter comment="" internalId="_VJabWnmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Port" prompt="db_atlas_superstore_Port?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_VJabW3mNEe6-XOtDl1gqOg" name="db_atlas_superstore_Database" prompt="db_atlas_superstore_Database?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="atlas_superstore"/>
+  </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" internalId="_VJabXHmNEe6-XOtDl1gqOg" name="db_atlas_superstore_AdditionalParams" prompt="db_atlas_superstore_AdditionalParams?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter comment="" internalId="_VJabXXmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Login" prompt="db_atlas_superstore_Login?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_VJabXnmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Server" prompt="db_atlas_superstore_Server?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_VJabX3mNEe6-XOtDl1gqOg" name="db_atlas_superstore_Password" prompt="db_atlas_superstore_Password?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_Password" value="enc:system.encryption.key.v1:iXlNC5Pf0J0ub07Yt1aGr0bY7HKVb9qQ1m/IMhyyqmDakU7RQEmIXfs56MY="/>
+    <contextParameter comment="" internalId="_VJabYHmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Port" prompt="db_atlas_superstore_Port?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_VJabYXmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Database" prompt="db_atlas_superstore_Database?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="atlas_superstore"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" internalId="_VJabYnmNEe6-XOtDl1gqOg" name="db_atlas_superstore_AdditionalParams" prompt="db_atlas_superstore_AdditionalParams?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter comment="" internalId="_VJabY3mNEe6-XOtDl1gqOg" name="db_atlas_superstore_Login" prompt="db_atlas_superstore_Login?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_VJabZHmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Server" prompt="db_atlas_superstore_Server?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_VJabZXmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Password" prompt="db_atlas_superstore_Password?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_Password" value="enc:system.encryption.key.v1:seX0lhJiG2+bFDXch/0TYWvgZh19yVAjXlXc1j/Wl+vL/3NJdZKRD0AFyCk="/>
+    <contextParameter comment="" internalId="_VJabZnmNEe6-XOtDl1gqOg" name="db_atlas_superstore_Port" prompt="db_atlas_superstore_Port?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_VJabZ3mNEe6-XOtDl1gqOg" name="db_atlas_superstore_Database" prompt="db_atlas_superstore_Database?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="atlas_superstore"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="32"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -106,13 +139,259 @@
     <routinesParameter id="_IsgD2WKFEe6lzL4OlgJs9A" name="TalendStringUtil"/>
     <routinesParameter id="_IsNI4GKFEe6lzL4OlgJs9A" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_619d1491-2082-42bc-bdd3-8efb03b9e8bf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>o43wV9RmJZrUGlH+YhFQZ/LbUW4VF9ebtNgaQE+wAB+e341Cc0UPFzeYvNXEmaB/n6eJG7dTFHd0&#13;
-/KQYZdNVxA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8fcc3aa8-67e8-467f-b9bd-5f4d9a678eb5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mjxi7l7SuxOe3ZYG+BSu4nFf/QqUqNlRXFPU953fJlakJyFJKbSG1XRyy/aJF6R7Ynam2mfa37YT&#13;
-FP/p7mEV1A==</DigestValue></Reference></SignedInfo><SignatureValue>LHDmtIUlJJ+oscjcIQbBiKuLN1Frzt3jdYk1GTWR+uURsswPcPW1P3D3FJH0reuZoAn/0/qCmtKA&#13;
-iGkxcVRKsWKNwRAygDZGjBqjN/i9sV1G00566Gl05qXOFM0yV/bNdV7Wf4fFh0/wsIaajU3SrPvC&#13;
-fR4WsAm572rkBQwRqG5rlPIgIHFNDXNitVCd4QRWkN803CjonBXzVmcTrJNalRAzD/ZqRAOq7MwZ&#13;
-YEMwpQePeQNx7wkp6jc8AkYpT2kQQoDJgGXUVOWUvCZay0IKypaCrAzeeVA4ylTSOcocc+QAfWKx&#13;
-SlP3pmvddEfXJXhDStYDmLhMBdkNc3zjBUggbQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_lp_AkHlfEe6b6ZNHYWCiFg"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
+    <elementParameter field="TEXT" name="HOST" value="context.db_atlas_superstore_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.db_atlas_superstore_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.db_atlas_superstore_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.db_atlas_superstore_AdditionalParams"/>
+    <elementParameter field="TEXT" name="USER" value="context.db_atlas_superstore_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bn4/03VxnGEvCYhRXpJuHpqPKUTA/0TKFKxTWurTZ3+hSi/JH8AlLfVbskTbObcHmFJRsXHRLNmwNDPufdPJDw=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="postjob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMysqlClose" componentVersion="0.102" offsetLabelX="-50" offsetLabelY="-82" posX="864" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_lp_AkHlfEe6b6ZNHYWCiFg"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MARIADB"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.db_atlas_superstore_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.db_atlas_superstore_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.db_atlas_superstore_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.db_atlas_superstore_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:IwZGT1xHSkIveIZpcXpnkh2GacpYZGNJNx6CfxLE6M6yLujO/frjlU7rMoXfdwYjS7j7PrzI8Yk7wcv2NxpdVQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_atlas_superstore_clients&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `stg_atlas_superstore_clients`.`code_client`, &#10;  `stg_atlas_superstore_clients`.`nom`, &#10;  `stg_atlas_superstore_clients`.`prenom`, &#10;  `stg_atlas_superstore_clients`.`pays`&#10;FROM `stg_atlas_superstore_clients`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.db_atlas_superstore_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" show="false" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_client"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="prenom"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pays"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="db_atlas_superstore"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="11" name="code_client" nullable="true" originalLength="11" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="nom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="prenom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pays" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_client"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="prenom"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pays"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="11" name="code_client" nullable="true" originalLength="11" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="nom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="prenom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pays" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:NBUkJs4E+R+PLKJPjtanDuD8LARyEQd+tu/EeXQQ"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dwh_dim_atlas_superstore_clients&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE_OR_INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" show="false" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" show="false" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_client"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="prenom"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pays"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" show="false" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" key="true" length="11" name="code_client" nullable="true" originalLength="11" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="nom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="prenom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pays" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" length="11" name="code_client" nullable="true" originalLength="11" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="nom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="prenom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pays" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tDBClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="pre_chargement" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="nom_magasin"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="pays_magasin"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="pre_chargement"/>
+  </connection>
+  <connection connectorName="FLOW" label="chargement_dim" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="id_client"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="chargement_dim"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0d67d47d-328d-4d85-bc35-cdcdde9b4f19"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ebzEI1EHGC0sfnb+n9j+3KjxgO2EMpM4LkY1y0McFArSF+F2KswnG3v9gV7ZnbBj+8C1YjMXojB+&#13;
+DO0wsnUD9A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c823e012-7f40-4e37-b7b4-043f97815e91"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wpjGYyuF8hFw1qHPy15zy8UM7y3MvbEuVWwO3/lCz+JHMEDEJ2jnBoH3nxZkKlvGmG0B4GCXM4g7&#13;
+S0Ujj2x6xA==</DigestValue></Reference></SignedInfo><SignatureValue>S9LZxe1xvaf62FU97N1BrUg87onfCsPWumzMl969943xcmgN0bXmQzg9piSZMC8v/JHChj5bw9xI&#13;
+I7uE6zEeRbphRkvuGLzFRvU+UTXkn+P6BDE9cXNOdGCW9jTGEYnKjYAuNniCT1A+r+cTzcOr1gaQ&#13;
+KnF+U8EnSSG+K1CrkZ/ezaPr2ISLG0LNCGKdvoN6qXAlwf0NB+Ic1zUZ8POcHOqqNj30k76GwX28&#13;
+wIHei2k7hzdueAsEkmkeAE2S4/zdVLa11ztumxDlC7wT9Uo3YYPn5GEGeMl66YpEkq2iru0U/a9j&#13;
+8cu7SFF2pOS8YF48YjX7zWc4YiWKviRi7WnVVg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -134,4 +413,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8fcc3aa8-67e8-467f-b9bd-5f4d9a678eb5" Target="#_619d1491-2082-42bc-bdd3-8efb03b9e8bf"><Timestamp>2023-10-27 16:00:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c823e012-7f40-4e37-b7b4-043f97815e91" Target="#_0d67d47d-328d-4d85-bc35-cdcdde9b4f19"><Timestamp>2023-11-02 14:37:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
