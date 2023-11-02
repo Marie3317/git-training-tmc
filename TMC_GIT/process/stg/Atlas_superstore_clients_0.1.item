@@ -221,9 +221,9 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_1">
       <column comment="" key="true" length="-1" name="code_client" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nom" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="prenom" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="pays" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="nom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="prenom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pays" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="320">
@@ -247,7 +247,7 @@
       <column comment="" key="false" length="255" name="pays" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="StringHandling.UPCASE(clients.nom != null &amp;&amp; !(&quot;&quot;).equalsIgnoreCase(StringHandling.TRIM(clients.nom)) ? client.nom : &quot;n/a&quot;) " name="nom" type="id_String"/>
         <mapperTableEntries expression="StringHandling.UPCASE(client.prenom != null &amp;&amp; !(&quot;&quot;).equalsIgnoreCase(StringHandling.TRIM(client.prenom)) ? client.prenom : &quot;n/a&quot;) " name="prenom" type="id_String"/>
@@ -370,15 +370,15 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="csv_clients" name="tFileInputDelimited_1">
       <column comment="" key="true" length="-1" name="code_client" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="prenom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="pays" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="nom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="prenom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pays" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="csv_clients" name="REJECT">
       <column comment="" key="true" length="-1" name="code_client" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="prenom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="pays" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="nom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="prenom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pays" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -545,13 +545,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_897868c7-933b-4680-8a5a-2f2e9c5d5b9a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>98RsyrZfXMK6MWb0C/SUtqL0F5V/xSUWYZvjWnEiBSCXbRoJwYUoPSy6jJTG9T8YsX62PTeYVFqr&#13;
-rxqxeI6BMQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e41aa29f-1221-41e6-af2e-16c93fed59da"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2tHOKpTN4yC87Bu29Xvh4K1zTaOwXyulhphX2cwc9ddV4qRREROUhVaFBckaJ/cdBpn9W0Vfg8EY&#13;
-kXoD6LPADw==</DigestValue></Reference></SignedInfo><SignatureValue>BQaHyvKIBvWasPuashl4iWI4g/1sF8ydShJOwI2SiXjedUTHs81zhvXTqS3hiPPX8qWya6yapIvO&#13;
-etm+OJIIGhMKj5YbInmwsz7Cvx/EHTKlPYzznOlZ6C/quSKa6/eO1EJJWBK4l2LIzjxn/Ki3SCA8&#13;
-R5RJKZvMRBF1xdcxrDoJl+17wlaWmjt4xYgfXA+hK01LSdiBpspRo8RuwnrfKlsZP+cMSY01cRKn&#13;
-ym/Qvcf0nk4dBAFgmoOQ54pVcQBEVuxhItm+lNorcR+7tWpn7MWbnLj/g4qD3ARsYvi4GaUZa5ym&#13;
-BiSr72zM++4R4JSTOY32iQchZnRymCX5MEDOxQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bfa4d259-26ff-4b1d-aac0-a4318b844921"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Vo4Lj5ULDF32ywCZgArCi674+NceZJSghWyWmGAw8zs5GtT1kbjoe4jS0EHr8pLT8oksoQXK0d29&#13;
+bL5A3hR/lA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_11c3152a-c0c8-4e5c-8754-7bdf49f3f36b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vBfeppS/6IQiWlUQDUaNffGPIWC+SlC+5Hn8mqwtFjhMGA7wDEakaJGnAqYQEWrStKOVfCDHio0A&#13;
+eQ5o+dQWBw==</DigestValue></Reference></SignedInfo><SignatureValue>ZqS1Xxcjdq5L1Hhp/WuLNFiOI0lvJ2CTybYdVGVUCGNbeI9jXhHSW4hSJBD6S3ygTG1W6ioSP7jO&#13;
+C5uhXD5i7vnKxsCP0jIt0o3NVwDaQlXOB2Et5GAm8pwruNlmpXxChPmPNTkomC8IyMB6QEdC60n/&#13;
+YP2+BThqHooBzf07blfn/LVaCivIVYlm0SLyaWuq7JznA83BaheCppfWJjAptdU96F9fQ79mRVrG&#13;
+wCGTePDY51nkDQk7eilq7ZOD24pwW9mvhbO1BEHz1XEp/JC+cdDoW21X4ggmjRhJvghWE6qZ+l6c&#13;
+UrB0kzx8bM9Cl0r2GJFzwRTyIf/dieVcE/I6FA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -573,4 +573,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e41aa29f-1221-41e6-af2e-16c93fed59da" Target="#_897868c7-933b-4680-8a5a-2f2e9c5d5b9a"><Timestamp>2023-11-02 13:05:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_11c3152a-c0c8-4e5c-8754-7bdf49f3f36b" Target="#_bfa4d259-26ff-4b1d-aac0-a4318b844921"><Timestamp>2023-11-02 13:08:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
