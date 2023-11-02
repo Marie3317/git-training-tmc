@@ -190,12 +190,12 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.db_atlas_superstore_Login"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:IwZGT1xHSkIveIZpcXpnkh2GacpYZGNJNx6CfxLE6M6yLujO/frjlU7rMoXfdwYjS7j7PrzI8Yk7wcv2NxpdVQ=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_atlas_superstore_clients&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_atlas_superstore_produits&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `stg_atlas_superstore_clients`.`code_client`, &#10;  `stg_atlas_superstore_clients`.`nom`, &#10;  `stg_atlas_superstore_clients`.`prenom`, &#10;  `stg_atlas_superstore_clients`.`pays`&#10;FROM `stg_atlas_superstore_clients`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `stg_atlas_superstore_produits`.`reference_produit`, &#10;  `stg_atlas_superstore_produits`.`libelle`&#10;FROM `stg_atlas_superstore_produits`&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -206,22 +206,16 @@
     <elementParameter field="CHECK" name="ENABLE_STREAM" show="false" value="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="code_client"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reference_produit"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nom"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="prenom"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="pays"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libelle"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="db_atlas_superstore"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_1">
-      <column comment="" key="false" length="11" name="code_client" nullable="true" originalLength="11" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="nom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="prenom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="pays" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="4" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="libelle" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="224">
@@ -238,27 +232,22 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="code_client"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reference_produit"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nom"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="prenom"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="pays"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libelle"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="false" length="11" name="code_client" nullable="true" originalLength="11" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="nom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="prenom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="pays" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="4" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="libelle" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
@@ -268,7 +257,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:NBUkJs4E+R+PLKJPjtanDuD8LARyEQd+tu/EeXQQ"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dwh_dim_atlas_superstore_clients&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dwh_dim_atlas_superstore_produits&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE_OR_INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -288,22 +277,12 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="code_client"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reference_produit"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nom"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="prenom"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="pays"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libelle"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -317,16 +296,12 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="true" length="11" name="code_client" nullable="true" originalLength="11" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="nom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="prenom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="pays" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="4" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="libelle" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="true" length="11" name="code_client" nullable="true" originalLength="11" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="nom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="prenom" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="pays" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="4" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="libelle" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -345,6 +320,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="pays_magasin"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="libelle"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="pre_chargement"/>
@@ -356,6 +334,7 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="chargement_dim"/>
   </connection>
   <subjob>
@@ -381,17 +360,24 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Création dim_produits"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0d67d47d-328d-4d85-bc35-cdcdde9b4f19"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ebzEI1EHGC0sfnb+n9j+3KjxgO2EMpM4LkY1y0McFArSF+F2KswnG3v9gV7ZnbBj+8C1YjMXojB+&#13;
-DO0wsnUD9A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c823e012-7f40-4e37-b7b4-043f97815e91"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wpjGYyuF8hFw1qHPy15zy8UM7y3MvbEuVWwO3/lCz+JHMEDEJ2jnBoH3nxZkKlvGmG0B4GCXM4g7&#13;
-S0Ujj2x6xA==</DigestValue></Reference></SignedInfo><SignatureValue>S9LZxe1xvaf62FU97N1BrUg87onfCsPWumzMl969943xcmgN0bXmQzg9piSZMC8v/JHChj5bw9xI&#13;
-I7uE6zEeRbphRkvuGLzFRvU+UTXkn+P6BDE9cXNOdGCW9jTGEYnKjYAuNniCT1A+r+cTzcOr1gaQ&#13;
-KnF+U8EnSSG+K1CrkZ/ezaPr2ISLG0LNCGKdvoN6qXAlwf0NB+Ic1zUZ8POcHOqqNj30k76GwX28&#13;
-wIHei2k7hzdueAsEkmkeAE2S4/zdVLa11ztumxDlC7wT9Uo3YYPn5GEGeMl66YpEkq2iru0U/a9j&#13;
-8cu7SFF2pOS8YF48YjX7zWc4YiWKviRi7WnVVg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_17c2aad6-942c-4904-8f25-5d6441555199"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jF2xzf3kID06J3JgV4kj6iTXBWn7AmuZm/2gq5+fFbrAlVKwIGttLhoKBT+FGwXrEU2mt9ncoeG8&#13;
+d9NLguyowQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e06c3949-7ab3-425c-9963-a6e3f2c2eecc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>A+cQZC/t3Mja0ah4vz3W1sIrD3nIZaX6FWLhdP7hlAgijNTQqheMmwzW9m1rE9MYYnkW1hmpEQLU&#13;
+7uYvMbSXWg==</DigestValue></Reference></SignedInfo><SignatureValue>DuygSFOiQJwEd9H0TF1jkBqfSdRX2iGekd44YAOkiY5CZQn3Y/N8LiY4H6nDNj62M0uIjl54I9Nt&#13;
+tuOzLcMO3og7DpOgEE9b4qxGE9rnHSY/0ey3xm6NMxDSi8j+AAtMM06ILAbODLKmfjIAaF3s+uDF&#13;
+r+cVF5K0e0l5C7bBTJRAqAIY99YhYkNffKl21+iWJpasDxCJ4KlRITTXSF5CBJwsP5bb8JuYQbnA&#13;
+PHkh9LabD49jNA8d6GhLdhA559D6bys7XJ12CcUscIhZiN8AFekRaCaba/n7ZAXFsz7fRB/kfQgo&#13;
+aPZO4KRG0rlFxuBwyPKmPiV4WE6sRsAKIzjyhw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -413,4 +399,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c823e012-7f40-4e37-b7b4-043f97815e91" Target="#_0d67d47d-328d-4d85-bc35-cdcdde9b4f19"><Timestamp>2023-11-02 14:37:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e06c3949-7ab3-425c-9963-a6e3f2c2eecc" Target="#_17c2aad6-942c-4904-8f25-5d6441555199"><Timestamp>2023-11-02 14:43:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
