@@ -170,34 +170,4 @@
     "version" : "Latest",
     "type" : "property"
   } ]
-}, {
-  "baseItem" : {
-    "id" : "_OAc8IHmvEe6KWJo-yyINPw",
-    "version" : "0.1",
-    "type" : "joblet"
-  },
-  "relatedItems" : [ {
-    "id" : "_MSJZIHlgEe6b6ZNHYWCiFg",
-    "version" : "Latest",
-    "type" : "context"
-  }, {
-    "id" : "_lp_AkHlfEe6b6ZNHYWCiFg",
-    "version" : "Latest",
-    "type" : "property"
-  } ]
-}, {
-  "baseItem" : {
-    "id" : "_tYtjAHmwEe6KWJo-yyINPw",
-    "version" : "0.1",
-    "type" : "joblet"
-  },
-  "relatedItems" : [ {
-    "id" : "_MSJZIHlgEe6b6ZNHYWCiFg",
-    "version" : "Latest",
-    "type" : "context"
-  }, {
-    "id" : "_lp_AkHlfEe6b6ZNHYWCiFg",
-    "version" : "Latest",
-    "type" : "property"
-  } ]
 } ]
