@@ -227,7 +227,7 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nombre_commande"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nombre_commandes"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="somme_ventes"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -245,7 +245,7 @@
       <column comment="" key="false" length="-1" name="conditionnement" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="prix_unitaire" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nombre_commande" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
@@ -271,7 +271,7 @@
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="255" name="id_client" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="255" name="id_magasin" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nombre_commande" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -284,7 +284,7 @@
         <mapperTableEntries expression="stg_cde.date " name="date" nullable="true" type="id_String"/>
         <mapperTableEntries expression="dim_client.id_client " name="id_client" type="id_String"/>
         <mapperTableEntries expression="dim_magasin.id_magasin " name="id_magasin" type="id_String"/>
-        <mapperTableEntries expression="stg_cde.nombre_commande " name="nombre_commande" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="stg_cde.nombre_commandes " name="nombre_commandes" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="stg_cde.somme_ventes " name="somme_ventes" nullable="true" type="id_Float"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="stg_cde" sizeState="INTERMEDIATE">
@@ -298,7 +298,7 @@
         <mapperTableEntries name="conditionnement" nullable="true" type="id_String"/>
         <mapperTableEntries name="prix_unitaire" nullable="true" type="id_Float"/>
         <mapperTableEntries name="date" nullable="true" type="id_String"/>
-        <mapperTableEntries name="nombre_commande" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="nombre_commandes" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="somme_ventes" nullable="true" type="id_Float"/>
       </inputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="dim_client" sizeState="INTERMEDIATE">
@@ -372,7 +372,7 @@
       <column comment="" key="false" length="255" name="id_produit" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_date" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_magasin" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nombre_commande" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -388,7 +388,7 @@
         <mapperTableEntries expression="dim_produit.id_produit " name="id_produit" type="id_String"/>
         <mapperTableEntries expression="dim_date.id_date " name="id_date" type="id_String"/>
         <mapperTableEntries expression="prem_sortie.id_magasin " name="id_magasin" type="id_String"/>
-        <mapperTableEntries expression="prem_sortie.nombre_commande " name="nombre_commande" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="prem_sortie.nombre_commandes " name="nombre_commandes" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="prem_sortie.somme_ventes " name="somme_ventes" nullable="true" type="id_Float"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="prem_sortie" sizeState="INTERMEDIATE">
@@ -398,7 +398,7 @@
         <mapperTableEntries name="date" nullable="true" type="id_String"/>
         <mapperTableEntries name="id_client" type="id_String"/>
         <mapperTableEntries name="id_magasin" type="id_String"/>
-        <mapperTableEntries name="nombre_commande" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="nombre_commandes" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="somme_ventes" nullable="true" type="id_Float"/>
       </inputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="dim_date" sizeState="INTERMEDIATE">
@@ -574,7 +574,7 @@
       <column comment="" key="false" length="255" name="id_produit" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_date" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_magasin" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nombre_commande" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
     <metadata connector="FILTER" label="sortie_clean" name="FILTER">
@@ -582,7 +582,7 @@
       <column comment="" key="false" length="255" name="id_produit" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_date" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_magasin" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nombre_commande" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="sortie_clean" name="REJECT">
@@ -590,7 +590,7 @@
       <column comment="" key="false" length="255" name="id_produit" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_date" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_magasin" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nombre_commande" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -617,7 +617,7 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="id_magasin"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nombre_commande"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nombre_commandes"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="somme_ventes"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -630,7 +630,7 @@
       <column comment="" key="false" length="255" name="id_produit" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_date" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_magasin" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nombre_commande" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
@@ -656,7 +656,7 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="id_magasin"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nombre_commande"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nombre_commandes"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="somme_ventes"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -671,7 +671,7 @@
       <column comment="" key="false" length="255" name="id_produit" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_date" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_magasin" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nombre_commande" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -727,7 +727,7 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nombre_commande"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nombre_commandes"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -750,7 +750,7 @@
       <column comment="" key="false" length="255" name="id_produit" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_date" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_magasin" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nombre_commande" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="sortie_clean" name="REJECT">
@@ -758,7 +758,7 @@
       <column comment="" key="false" length="255" name="id_produit" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_date" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="id_magasin" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nombre_commande" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -793,7 +793,7 @@
       <elementValue elementRef="TRACE_COLUMN" value="date"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="nombre_commande"/>
+      <elementValue elementRef="TRACE_COLUMN" value="nombre_commandes"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="somme_ventes"/>
@@ -835,7 +835,7 @@
       <elementValue elementRef="TRACE_COLUMN" value="date"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="nombre_commande"/>
+      <elementValue elementRef="TRACE_COLUMN" value="nombre_commandes"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="somme_ventes"/>
@@ -856,7 +856,7 @@
   </connection>
   <connection connectorName="FLOW" label="sortie_clean" lineStyle="0" metaname="sortie_clean" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tFilterRow_13">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="nombre_commande"/>
+      <elementValue elementRef="TRACE_COLUMN" value="nombre_commandes"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="somme_ventes"/>
@@ -930,13 +930,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1955beba-a86b-4771-9801-fd3b2d3ae999"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1rsQEjJK8En9sLE4yJNKKQ2xgcSzJgBu/r3cuTkaQIlXRSFdJTr4sMu6heXm3/oqImkjtBHWKC/4&#13;
-+ZTGiwD57Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1d057ee8-7d7e-451a-b54e-0691b91f06c4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DMg18Yu85Eta16GA0iXuFuAN+4r4yEcjklJA6Y9YDLnk2iguQjJLPafsVXeVlwjLAil8Lzd4lPJt&#13;
-JMsnyItNyg==</DigestValue></Reference></SignedInfo><SignatureValue>X7SxE3uOJkb5/GGA0tAlimmA1gNUCHnZvYeisLPiFySJTRJr9qDPa47dcj6Z8QlJDjDOMHqNGEu4&#13;
-px4gavHLjItq65SnWfzGlYQE0CRwy52l9i6dXAplvr2Ke89uRCsLvP/jh56sHGkn4ffChXky9ADQ&#13;
-sOU8zpeJWYU8/OeY8A9PN58/EiC6AP4KOfUobu9UY0WBfYkiHKg6WsH5iyAmI8xMkPupQkMeqeOj&#13;
-71IFI3Q6Xl0YIsuNKXCAU8PkcDZswHgjOcyea44LUrn159EglPoLKFAXoOpEKgHSYss3NRztDHgp&#13;
-ZYfmQGV8T1jPUXMbaRotNj3cOSoWBoVkVGb9bw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a11bcb2c-1da5-4d97-96a5-89439bcf3f31"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jphNyyhXAzpgzA3QeBysHmh50UbG4gpHBBSfqFq7YY+o/VhV0SxhazLkHNAUCmKOsfOwYkWsH6Q9&#13;
+vLw6DXMWyg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4aa79b32-0c1c-4860-8905-ab456dc9c6fb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gMCjz/ykkheFyMqskkiKMZbU8IAPUbSQhLcejsvpiMwAo4belGPgLW3N6goJpQ0S1LNVzx+Kxzuz&#13;
+riRbbAOgyQ==</DigestValue></Reference></SignedInfo><SignatureValue>kD0WvsGP6YuNoyKT4ppWohIlgMHaGe88+cgxB6bSAe6RnMosqsumtBwKK97k6oY7Nc8L5io18XFo&#13;
+QhKIet2Eo/HpBz7cGb1f7KVG9O9YuSU7PvIHGbkxbagImHXRUDfjV9X4N/UHTPjLw8BGUNYXCq8m&#13;
+qruOBf97UwKCl/nUDS4Iy3MDRfgWpJCF7sq/yJ5FGwPW3LMRNEI88m50TAmmc52YWt3BQrWCZWhC&#13;
+yFg13EVQchnhdUJV69dSYvuzwBU7kh3Q5h5grKZRZPi74J75YbgvtXxzn5VhkKhtqtFESWaJ0hPU&#13;
+TE+HuAEdhfd7Fc/uGTLU572aG3kE987YCcfUzg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -958,4 +958,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1d057ee8-7d7e-451a-b54e-0691b91f06c4" Target="#_1955beba-a86b-4771-9801-fd3b2d3ae999"><Timestamp>2023-11-03 15:08:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4aa79b32-0c1c-4860-8905-ab456dc9c6fb" Target="#_a11bcb2c-1da5-4d97-96a5-89439bcf3f31"><Timestamp>2023-11-03 15:10:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
