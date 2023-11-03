@@ -264,7 +264,7 @@
       <column comment="" key="true" length="-1" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="code_client" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="date_commande" nullable="true" originalLength="255" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="is_commande_annulee" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="nom_magasin" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -273,13 +273,13 @@
       <column comment="" key="false" length="255" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateCondensedTool="true" name="Cleaned" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="cde.numero_commande " name="numero_commande" type="id_String"/>
         <mapperTableEntries expression="cde.code_client " name="code_client" nullable="true" type="id_String"/>
         <mapperTableEntries expression="cde.reference_produit " name="reference_produit" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="cde.quantite " name="quantite" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="cde.quantite " name="quantite" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="cde.date_commande " name="date_commande" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="cde.is_commande_annulee " name="is_commande_annulee" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="cde.nom_magasin " name="nom_magasin" nullable="true" type="id_String"/>
@@ -293,10 +293,10 @@
         <mapperTableEntries name="prix_unitaire" nullable="true" type="id_Float"/>
       </inputTables>
       <inputTables activateCondensedTool="true" lookupMode="RELOAD" matchingMode="ALL_MATCHES" name="cde" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="numero_commande" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="numero_commande" nullable="true" type="id_String"/>
         <mapperTableEntries name="code_client" nullable="true" type="id_String"/>
         <mapperTableEntries expression="cdes.reference.substring(0, cdes.reference.length()-5) " name="reference_produit" nullable="true" operator="=" type="id_String"/>
-        <mapperTableEntries name="quantite" nullable="true" type="id_String"/>
+        <mapperTableEntries name="quantite" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="date_commande" type="id_Date"/>
         <mapperTableEntries name="is_commande_annulee" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="nom_magasin" nullable="true" type="id_String"/>
@@ -356,7 +356,7 @@
       <column comment="" key="true" length="-1" name="numero_commande" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="code_client" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="reference_produit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="quantite" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="quantite" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_commande" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="is_commande_annulee" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="nom_magasin" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -379,7 +379,7 @@
       <column comment="" key="true" length="-1" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="code_client" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="date_commande" nullable="true" originalLength="255" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="is_commande_annulee" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="nom_magasin" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -391,7 +391,7 @@
       <column comment="" key="true" length="-1" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="code_client" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="date_commande" nullable="true" originalLength="255" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="is_commande_annulee" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="nom_magasin" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -403,7 +403,7 @@
       <column comment="" key="true" length="-1" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="code_client" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="date_commande" nullable="true" originalLength="255" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="is_commande_annulee" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="nom_magasin" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -453,10 +453,10 @@
     <elementParameter field="TEXT" name="LABEL" value="data_client_clean"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="true" length="-1" name="numero_commande" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="code_client" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="date_commande" nullable="true" originalLength="255" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="is_commande_annulee" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="nom_magasin" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -509,14 +509,14 @@
       <column comment="" key="true" length="-1" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="code_client" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="date_commande" nullable="true" originalLength="255" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="is_commande_annulee" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="nom_magasin" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="pays_magasin" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="256">
@@ -610,28 +610,28 @@
     <elementParameter field="TEXT" name="LABEL" value="sortie_stg"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="true" length="255" name="numero_commande" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="code_client" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="date_commande" nullable="true" originalLength="255" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="is_commande_annulee" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="date_commande" nullable="true" originalLength="255" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="is_commande_annulee" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="nom_magasin" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="pays_magasin" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="true" length="255" name="numero_commande" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="numero_commande" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="code_client" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="reference_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="date_commande" nullable="true" originalLength="255" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="is_commande_annulee" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="quantite" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="date_commande" nullable="true" originalLength="255" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="is_commande_annulee" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="nom_magasin" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="pays_magasin" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="conditionnement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="prix_unitaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -737,13 +737,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5875ed04-c81a-4c83-a4a6-cd9c3c433620"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mvJmzOs82NeOjHGkDOwQESXApQK18105kmqVUgk/rx7kcnaRSJ64ii3TSGbTtvIktLs5nTloJV/C&#13;
-sB88p81cuA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a00d3f4b-9410-4039-b52c-c21a4c31ccc6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ifIcvIJRxmA0kuHfNdZdGCj700XIbZbUIS0cR8QvWWy1SfTQFkxICQPq5HMCaC/I+iC/ls/nEi4t&#13;
-ygHH5xBlXg==</DigestValue></Reference></SignedInfo><SignatureValue>g3ettUg3BvwCHUvPltmAob6D1DSSrvwVx66MonSo1kceRhjCEtNGP03/9ZIN/n8H8lnqLC61Cc10&#13;
-05+7bV6k9myzGBuBqMjUh9nLTGwQEeOgXjDKsajFeJyCEBVdzgKSypKsjJ0dBkvLLvQqh6hEFpdA&#13;
-wcFOOn6OxfeJItHbUS/12OzGZZGnxhrz9bW1MBJGUroBo3uPKzopfgSrofrKxar+Cu6aUtjhmsfp&#13;
-0YfB8lOitA2PZltQB9ILnTgGRcIHZ+0+8OCBKaWukxu1gmYGstrFrvVHSbC+C+1TRNF1CSjaedXN&#13;
-yR4apOg3EBSKPF4mrZooic/ETh35+H7tWqRPmg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_24a1d9de-42b4-4bab-b25d-17194b83e508"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/vxH+l1pYUgsif6hqQyhSgE/cVIijEU3oLNAVe6THED64WfhcusxsOVdqnrfMfDNOTyKZfsjgiCz&#13;
+EBvpjvaKTw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8971d222-cd03-4c45-936e-9018906e5405"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BYjr5Mtjrf9etdC77qFuVKi8/4ggg/MJ/7Ts7GZddH/px6qY+GO+cCy4RpqwQfzWpMB4hzJgy7w3&#13;
+XrQUK0bWRA==</DigestValue></Reference></SignedInfo><SignatureValue>Y3vIkJ4Y/qHc2IQoMMiNY/i/vtluudU3WaqRou14CU78yRGCcdSS4vbqdF+8NUVSky/HEMKD9Ay8&#13;
+5H3xtu/DTUw/eZNvcU2ZZ0QMTHa/LGXx3oVfZYJpnGkDWlb1HzjVp2M1ug43V2mXon5a+hb9690W&#13;
+hmyRWxQ0jhEiCTK9dJdvvqeJVnEIjGKnVS6RtS6Dp6dxiN3zKPvjNHvn2UKEcfqdfsWASZlqtCgT&#13;
+vO/bcuoJvPu31+2MAeWTaENgLP9o27MenlL6R8mSqTHuggKBhQPactZlBLNuX2Kfi6Xt+NCNaR5o&#13;
+uqms7QNxgQz4CRrCGCSwWfpB0wOM0mO/zVLIxg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -765,4 +765,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a00d3f4b-9410-4039-b52c-c21a4c31ccc6" Target="#_5875ed04-c81a-4c83-a4a6-cd9c3c433620"><Timestamp>2023-11-02 14:29:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8971d222-cd03-4c45-936e-9018906e5405" Target="#_24a1d9de-42b4-4bab-b25d-17194b83e508"><Timestamp>2023-11-03 09:38:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
