@@ -305,6 +305,8 @@
       <column comment="" key="true" length="-1" name="id_produit" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_date" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_magasin" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="somme_ventes" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="nombre_commandes" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -317,6 +319,8 @@
         <mapperTableEntries expression="prem.id_produit " name="id_produit" type="id_String"/>
         <mapperTableEntries expression="row3.id_date " name="id_date" type="id_String"/>
         <mapperTableEntries expression="row4.id_magasin " name="id_magasin" type="id_String"/>
+        <mapperTableEntries expression="Var.somme_ventes " name="somme_ventes" type="id_Float"/>
+        <mapperTableEntries expression="Var.nombre_commandes " name="nombre_commandes" type="id_Integer"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="prem" sizeState="INTERMEDIATE">
         <mapperTableEntries name="id_client" type="id_String"/>
@@ -334,7 +338,7 @@
         <mapperTableEntries name="reference_produit" type="id_String"/>
         <mapperTableEntries name="quantite" type="id_Integer"/>
         <mapperTableEntries name="date_commande" type="id_Date"/>
-        <mapperTableEntries name="conditionnement" type="id_Integer"/>
+        <mapperTableEntries expression="" name="conditionnement" type="id_Integer"/>
         <mapperTableEntries expression="" name="prix_unitaire" type="id_Float"/>
       </inputTables>
     </nodeData>
@@ -437,6 +441,10 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="id_magasin"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="somme_ventes"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nombre_commandes"/>
+      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -446,6 +454,8 @@
       <column comment="" key="true" length="-1" name="id_produit" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_date" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_magasin" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="somme_ventes" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="nombre_commandes" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
@@ -556,6 +566,16 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="somme_ventes"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nombre_commandes"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
@@ -569,12 +589,16 @@
       <column comment="" key="true" length="-1" name="id_produit" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_date" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_magasin" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="somme_ventes" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="nombre_commandes" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="sort" name="REJECT">
       <column comment="" key="true" length="-1" name="id_client" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_produit" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_date" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id_magasin" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="somme_ventes" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="nombre_commandes" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -658,13 +682,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e459ef7e-1b21-4eda-b99b-f8c9c062d3d6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jGMHyY7+s1qS0TTguvDs/BkqgbeDWpW02X7gDCnOgecaZ8sxzWwlOix11NTVHBtt6sUGHGZDp+uT&#13;
-yBh+Z+8tGg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7fb2c6af-c417-4d57-a8d9-d32b66e033b3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>J7mw64+5IlOkHva3DxSC96jZSkcbHCFXkVzm73c6T6P9xhVC+ebU0IWI5kpyiRXLCI96g451gG1p&#13;
-WjCFBBqEsA==</DigestValue></Reference></SignedInfo><SignatureValue>eiDLMxAtgEfmZh8a1mxZceRxfgX0HiFrApz7+rlrH+/opTrxXf9N0IYGyUU/3+QGI3RHoQx/yDe7&#13;
-qpmHxEEv4tJjd1zZxfGDncmVYxP/bb3qxDfgYZ+Jo8eQhSbl3H0xwnn91ZYrtTFbZAZN3vJjJD2r&#13;
-ons4s7fhMTKJngB2xIgNXxYh4YsrRYSi9XDhvIB6zjBzKUNmLQphmOCCuc4f5Lr26XW++sJ1Uf5S&#13;
-AgIVFO7ZF38Kj70EGQ5bg4IsnJevtPcebFLfNNuObm1erIdH+cqrpK4n7CTGVNbYyWTldZW5FTFi&#13;
-2xuCiBWkR8c+YoW3Kvaw1cDgtj80nHKNNPXlgA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_109b21ce-6753-4800-9ab4-d9e0709836ee"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>baMUU+rZLqXdLuDXHxOq7CdZlbvaTmLxkX41aJ9siCQca403lyzGrhv30oabrnZGV/VkkrBzgBSH&#13;
+QXPu2V/dKg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7bfe65d7-9d5c-4409-afd8-56ecf1b4e401"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>t9GjEkDTAeC6XSbHtFtDpNFocxT2QLHru4+pbeyDqUVdk4wxi3WjqnmJ+KLaN2zhw7t6SIia9Ohk&#13;
+KW/i60vAFg==</DigestValue></Reference></SignedInfo><SignatureValue>ihXmbwoRHA7cLWzvJSQpoZZkpgJWnvtqd1biVjafjlzQXpNG6rABVyAdi6EGqd+tHgMke0xCNPWq&#13;
+szFbiIBY7UGQ/WsUPk2fmzvoQoGU7OyZ6hKNwjdUSugUCYQpc8NWhi2v2ruaSm+zp6oFSi/Z0tIo&#13;
+GB79bpgixFucXjtyVonqqzMZ8liL8RXb//XMNG9+i+RCy34SxIm9aTiPc/YY/Y85omWaqXUSbpzK&#13;
+rtGKzM7iOMwTVjChgkhkV5fj2LLTlkOV+gTybPJn6OM6zRIaBkSAxLaMMymL85KVrSCK6NSJZrFr&#13;
+0PpxJWLvoLAM1ZgGu74ifPlmZWuPzPYvL69arQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -686,4 +710,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7fb2c6af-c417-4d57-a8d9-d32b66e033b3" Target="#_e459ef7e-1b21-4eda-b99b-f8c9c062d3d6"><Timestamp>2023-11-03 09:25:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7bfe65d7-9d5c-4409-afd8-56ecf1b4e401" Target="#_109b21ce-6753-4800-9ab4-d9e0709836ee"><Timestamp>2023-11-03 09:25:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
