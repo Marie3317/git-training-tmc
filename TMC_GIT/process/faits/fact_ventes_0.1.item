@@ -505,7 +505,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
@@ -574,20 +573,20 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="sort" name="tDBOutput_1">
-      <column comment="" key="true" length="255" name="id_client" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="255" name="id_produit" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="255" name="id_date" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="255" name="id_magasin" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="somme_ventes" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="nombre_commandes" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="id_client" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="id_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="id_date" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="id_magasin" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="sort" name="REJECT">
-      <column comment="" key="true" length="255" name="id_client" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="255" name="id_produit" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="255" name="id_date" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="255" name="id_magasin" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="somme_ventes" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="nombre_commandes" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="id_client" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="id_produit" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="id_date" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="id_magasin" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="somme_ventes" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="nombre_commandes" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -635,7 +634,6 @@
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
   </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="8" metaname="tDBInput_5" offsetLabelX="0" offsetLabelY="0" source="tDBInput_5" target="tMap_2">
@@ -680,18 +678,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b2ce2c56-19cf-40e3-a4a2-990de2d3e55d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ispYLwRh6/Z7gIXbo8sOUxfvqm/m4JvJqjJnOJA9zRbd0eY13hqOpN8j++TaaWMS6nz5xJHT89QS&#13;
-XuA7CmzQ5w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d621e178-c1b5-48af-8902-f52ea5d268a1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hpgzoItALOBvRnjtwWyUDFADUn1Z51GOYy20wx0hwYjeSVMlzOKaJLPi/xg26NIIOwejO4bZmW8Y&#13;
-Vl3H8351rA==</DigestValue></Reference></SignedInfo><SignatureValue>k+XyuLWojHfmQgPna9r19f48J5WCfS2eMQgWYKW4loBRqSaNak4yJbW7/jD2LpMTKF9mvuGeQF3D&#13;
-3+oWJ7YGzlnN1NavAkv0yO9KAUITdvBf3Kt9FPezYWFYrrlAtHfzSWvEXOo/R4LLU/o0w3boKb07&#13;
-j1XOaexy8D/FDlqvwzRjyQ8M3VlQuer90okYu+djzYiHTQqsi9OjYLZE/a1BsDYlSheNue1tH/Tb&#13;
-9vOwAVzLaZRXH2bJZLRe8eTKFcN7nL1AJmF8I1cNpY9YY+fbdULFJEWTehvbjTHcIvX0e6L47YdJ&#13;
-vOFisX1toyCG4Tm/lzTv1G4sK73FU+fPukwqOg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3438ac8c-f1e5-4dcd-83d0-7a3de7cbcf97"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QiqX2HQhAb3RuvXx+aC4xWMKVNENwwV2AsdayWj/9PC+111otYL/N+Oa8GoNkxIS/UflzWN/UGe+&#13;
+ZoaotPtuyQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_99f08624-0d77-4311-94f7-957cbc42a870"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tTtazLg+GfSLG1Lu0/0buHLrkYhC6wREbS11dx+K/S976o45rua5EihAlwQNJv8UIvNjZBxQYMce&#13;
+2UAMsWL4ww==</DigestValue></Reference></SignedInfo><SignatureValue>fNT8fpBGsp9Tu8RzPsp/S/zzVqimN7qbXdcf4lP9F0noM0RSjoDYYZfQIZCsLSqi20+m3s66pGtY&#13;
+MdvtIHX0vnGwpdnPgF3f+2nbWg+mDtAqLPK5uxEH1pL/8DBew1HGCW+ZPiiyVw+9UX2d7BM40OVn&#13;
++4nud2yAzQLLMtsESZAnrCAvabMpxx9jnAyZFotLhyMGskYgVqzwjCXR9kpoy6p0BNCg1goX33OS&#13;
+o/CWgPzwmWp18+9oIqTK1BW/5Dn2abrkPlvqxQohvH1uPryq6NxbkLJoyz7pXeScGUXTsHKsTuW0&#13;
+DC95LCCiz7pxrWJjIexB8N3Yz8BvEdxWbFG4aw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -713,4 +706,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d621e178-c1b5-48af-8902-f52ea5d268a1" Target="#_b2ce2c56-19cf-40e3-a4a2-990de2d3e55d"><Timestamp>2023-11-03 10:19:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_99f08624-0d77-4311-94f7-957cbc42a870" Target="#_3438ac8c-f1e5-4dcd-83d0-7a3de7cbcf97"><Timestamp>2023-11-03 10:20:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
