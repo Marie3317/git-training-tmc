@@ -6,7 +6,7 @@
     <contextParameter comment="" internalId="_UVMWA3TgEe6LHIl4ianLXw" name="DB_clients_Login" prompt="DB_clients_Login?" promptNeeded="false" repositoryContextId="_dQhHsHTfEe6LHIl4ianLXw" type="id_String" value="root"/>
     <contextParameter comment="" internalId="_UVMWBHTgEe6LHIl4ianLXw" name="DB_clients_Database" prompt="DB_clients_Database?" promptNeeded="false" repositoryContextId="_dQhHsHTfEe6LHIl4ianLXw" type="id_String" value=""/>
     <contextParameter comment="" internalId="_UVMWBXTgEe6LHIl4ianLXw" name="DB_clients_Port" prompt="DB_clients_Port?" promptNeeded="false" repositoryContextId="_dQhHsHTfEe6LHIl4ianLXw" type="id_String" value="3306"/>
-    <contextParameter comment="" internalId="_tsaUAHlhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Password" prompt="db_atlas_superstore_Password?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_Password" value="enc:system.encryption.key.v1:DFQcEpyc4TXVLJyVaNGRxtt22PvJsNty07yi7hUSSZ+Yv5fJpMtnyp02TUA="/>
+    <contextParameter comment="" internalId="_tsaUAHlhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Password" prompt="db_atlas_superstore_Password?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_Password" value="enc:system.encryption.key.v1:Bnd+dBfIrdvTu6/FuIPpApiZeTrvXoKiax4RjFgwxuYSNo+s/sWmMyDK+uzBbolGSQnkSfwiVBsY8w0ptpCtFWfNZJc="/>
     <contextParameter comment="" internalId="_tsaUAXlhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Database" prompt="db_atlas_superstore_Database?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="atlas_superstore"/>
     <contextParameter comment="" internalId="_tsaUAnlhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Server" prompt="db_atlas_superstore_Server?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="localhost"/>
     <contextParameter comment="" internalId="_tsaUA3lhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Port" prompt="db_atlas_superstore_Port?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="3306"/>
@@ -20,7 +20,7 @@
     <contextParameter comment="" internalId="_UVMWCXTgEe6LHIl4ianLXw" name="DB_clients_Login" prompt="DB_clients_Login?" promptNeeded="false" repositoryContextId="_dQhHsHTfEe6LHIl4ianLXw" type="id_String" value="root"/>
     <contextParameter comment="" internalId="_UVMWCnTgEe6LHIl4ianLXw" name="DB_clients_Database" prompt="DB_clients_Database?" promptNeeded="false" repositoryContextId="_dQhHsHTfEe6LHIl4ianLXw" type="id_String" value=""/>
     <contextParameter comment="" internalId="_UVMWC3TgEe6LHIl4ianLXw" name="DB_clients_Port" prompt="DB_clients_Port?" promptNeeded="false" repositoryContextId="_dQhHsHTfEe6LHIl4ianLXw" type="id_String" value="3306"/>
-    <contextParameter comment="" internalId="_tsaUBnlhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Password" prompt="db_atlas_superstore_Password?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_Password" value="enc:system.encryption.key.v1:N0RPXwqol+qq5uX1fJn0YBIsclRkQk/jxs86xSYs0OYzZxb9M8iFtOtda24="/>
+    <contextParameter comment="" internalId="_tsaUBnlhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Password" prompt="db_atlas_superstore_Password?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_Password" value="enc:system.encryption.key.v1:7VpKSNGWh3+/tULJ1PzAzigzE12uzplMcRDGBuRjEIw8MUSFm8KlHOXumy5PzZUnntvV7uthFWkp4s+cp1TBucix5bA="/>
     <contextParameter comment="" internalId="_tsaUB3lhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Database" prompt="db_atlas_superstore_Database?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="atlas_superstore"/>
     <contextParameter comment="" internalId="_tsaUCHlhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Server" prompt="db_atlas_superstore_Server?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="localhost"/>
     <contextParameter comment="" internalId="_tsaUCXlhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Port" prompt="db_atlas_superstore_Port?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="3306"/>
@@ -34,7 +34,7 @@
     <contextParameter comment="" internalId="_UVMWD3TgEe6LHIl4ianLXw" name="DB_clients_Login" prompt="DB_clients_Login?" promptNeeded="false" repositoryContextId="_dQhHsHTfEe6LHIl4ianLXw" type="id_String" value="root"/>
     <contextParameter comment="" internalId="_UVMWEHTgEe6LHIl4ianLXw" name="DB_clients_Database" prompt="DB_clients_Database?" promptNeeded="false" repositoryContextId="_dQhHsHTfEe6LHIl4ianLXw" type="id_String" value=""/>
     <contextParameter comment="" internalId="_UVMWEXTgEe6LHIl4ianLXw" name="DB_clients_Port" prompt="DB_clients_Port?" promptNeeded="false" repositoryContextId="_dQhHsHTfEe6LHIl4ianLXw" type="id_String" value="3306"/>
-    <contextParameter comment="" internalId="_tsaUDHlhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Password" prompt="db_atlas_superstore_Password?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_Password" value="enc:system.encryption.key.v1:VXMU8IvT7r2cCIiulbVo4HoRgAPYDm9ht73fb7CVHFpResJ31NQ4nsVfaFo="/>
+    <contextParameter comment="" internalId="_tsaUDHlhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Password" prompt="db_atlas_superstore_Password?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_Password" value="enc:system.encryption.key.v1:VmXwr3nOD63dxqogNm9akkU/9doLvQNfVWXju3zIMnDqoANWIlME99fVZVaOWWOJE7UFH5DfCbOgHN3Wa5KEofxmpMY="/>
     <contextParameter comment="" internalId="_tsaUDXlhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Database" prompt="db_atlas_superstore_Database?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="atlas_superstore"/>
     <contextParameter comment="" internalId="_tsaUDnlhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Server" prompt="db_atlas_superstore_Server?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="localhost"/>
     <contextParameter comment="" internalId="_tsaUD3lhEe6b6ZNHYWCiFg" name="db_atlas_superstore_Port" prompt="db_atlas_superstore_Port?" promptNeeded="false" repositoryContextId="_MSJZIHlgEe6b6ZNHYWCiFg" type="id_String" value="3306"/>
@@ -190,13 +190,13 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_lp_AkHlfEe6b6ZNHYWCiFg"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
-    <elementParameter field="TEXT" name="HOST" value="context.db_atlas_superstore_Server"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="PORT" value="context.db_atlas_superstore_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.db_atlas_superstore_Database"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.db_atlas_superstore_AdditionalParams"/>
-    <elementParameter field="TEXT" name="USER" value="context.db_atlas_superstore_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9L+u1WZpnpU3Mi8kUuO13AAG8Th4JAJIY3/03Y8Kt/agFxqM+C9BfybFV0iL1P+7IJpr5ubNdwBEz+bfskrclA=="/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;atlas_superstore&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:v4aNGsKHIbgi8bCcDhGQTQfk+NG2tonLsGdXVp68E1U5IgcCC7P/D8jCequAMw=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -532,7 +532,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
@@ -543,7 +543,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
@@ -555,13 +555,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d20065f6-78c7-4b0c-9a02-304087661658"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1/rRIbzH50gK58vdgNj4/G3qrTwE36Nywh9X9jkWHQFFaZ5Kh2okRabqWZepQiP7U/04vA0Ig1w6&#13;
-jvEcSDMoKQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_98a80318-687a-4dc6-89c4-906f013200c9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dxq4yYFX+YZGbYbyZ/7XDhkCmoWVgbYTtlH2E7FnrF0KOkXFl04fCfg/grSigdWes/sQMnhDdUCc&#13;
-AtB0uDmeng==</DigestValue></Reference></SignedInfo><SignatureValue>X5Rjw/AWCfhRxVgEr44m//9U/wlsl7+ZLixvrjKrcJCxym9NR0PzkcSJi9MTF071mGWkCU3yZhjS&#13;
-Y059IL6vPOuY5SEm1+l9WrnStucauCl/5wILsM4x4JSpGGDQ0s6ElEBI9slq1mtwEVrqah3H9GSJ&#13;
-Dp8NG2CZiwTTf7rSY7BjTEFL5KuWwqopMpk2m56Fr+wGiVY5SPWOufeuyVdsMkYwIFDQpdBYtRJx&#13;
-wCj4BGVESQbWUepcJa4hWqmHqNANFLJXJ6Rp6HR7o4toL5Vty1YLW61GjTDJcZXg3PCQGY/YckSR&#13;
-vhf+aL6B2KyzOjcqgeaUa2WSm8nGJpbmrl80aw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a51e9a2f-1f4d-469b-9ac7-20f590d6cc31"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5fhvPRPaTDa8ZgFXNZbB07Z2IURQFLibhBl+Sokn23PGfCpCsRKeLQMVAtTljR/h2KHuZkJeMBMS&#13;
+TGa6L8broQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_adf677e5-b430-4e11-9214-d294dd260f33"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>04NCDrc48KCuyrIITMDjaL1wGr3Lo8vVERLB5+aOi/bw/njVC9C3Zc4RE4Q9LiLcnCgWFXf8ymcG&#13;
+8W1/e+sSyw==</DigestValue></Reference></SignedInfo><SignatureValue>e0XvR6iGDFTVOmxsZT8CeM6/AWWtOhM1FekxVVJA7LD5J5zvGN+FCV+ydkfWsuzeIYEoX8hXy3zd&#13;
+zPMmIQNCjQHrDb4CozlVk+HJZjoOGQBOmiIxae6ckC1KlMReIRHeFr/t1sKsFOBNBtNW3dKdVryt&#13;
+lavufj8CRgMcPqs/Lbx/NgIEmdjwuzHt2hL5PYXsfa+0ZlG1cYQ8fVnmeEtCv/uwsUECjTnHbhrZ&#13;
+Y4t1dD0YlHBVZKIALdIgCa6eehDpO+7YIUs0Y61ZHOjK4ZQNAUU/caNhYCy/nPDM5i3m2csKHF/6&#13;
+zguuuZQrhsrsVTDxhRCfQOVc210h1dDAQesipg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -583,4 +583,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_98a80318-687a-4dc6-89c4-906f013200c9" Target="#_d20065f6-78c7-4b0c-9a02-304087661658"><Timestamp>2023-11-02 14:29:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_adf677e5-b430-4e11-9214-d294dd260f33" Target="#_a51e9a2f-1f4d-469b-9ac7-20f590d6cc31"><Timestamp>2023-11-08 09:38:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
